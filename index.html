@@ -67,17 +67,17 @@
 
                 Knowledge Graphs (KGs) provide a principled framework for representing structured and interconnected knowledge through entities, relations, and formal ontologies. They enable interpretability, reasoning, and the integration of domain expertise, making them an important component for building reliable and trustworthy AI systems. At the same time, LLM-based agents are emerging as a powerful paradigm for building autonomous systems capable of planning, tool use, and long-term task execution, often requiring structured representations of knowledge and memory.
 
-
-
                 </p>
 
                 <p style="text-align:justify"> The interaction between generative models, agentic systems, and knowledge graphs is therefore becoming an important research direction in contemporary AI. This workshop aims to bring together researchers and practitioners from AI, NLP, Knowledge Graphs, Semantic Web, and Hybrid AI to explore methods, systems, and applications that combine these paradigms.
 
-                This edition represents a joint workshop, bringing together the communities of GenAIK (Generative AI and Knowledge Graphs) and NORA (Knowledge Graphs and Agentic Systems Interplay) to foster collaboration across these complementary research areas.
+                </p>
+
+                <p style="text-align:justify"> This edition represents a joint workshop, bringing together the communities of GenAIK (Generative AI and Knowledge Graphs) and NORA (Knowledge Graphs and Agentic Systems Interplay) to foster collaboration across these complementary research areas.
                 </p>
                 <ul class="list-inline social-buttons">
                     <li class="list-inline-item">
-                        X: <a href="https://x.com/GenAIK25">
+                        X: <a href="https://x.com/GenAIK26">
                             <i class="fab fa-twitter"></i>
                         </a>
                     </li>
@@ -105,29 +105,69 @@
                 <h2 class="section-heading text-uppercase">Topics of Interest</h2>
                 <div style="text-align:left">
                 <ul>
-                    <li> Enhancing KG construction and completion with GenAI<br />
+                    <li>KG construction, completion, and refinement with GenAI and Agents<br />
                         <ul>
-                            <li>Multimodal KG generation</li>
-                            <li>Text-to-KG using LLMs</li>
-                            <li>Multilingual KGs</li>
+                            <li>Text-to-KG extraction using LLMs (multilingual, multimodal)</li>
+                            <li>KG completion, cleaning, and refinement (deduplication, entity resolution)</li>
+                            <li>Fact verification, contradiction detection, and consistency checking</li>
+                            <li>Human-in-the-loop KG curation and interactive refinement</li>
                         </ul>
                     </li>
-                    <li>GenAI for KG embeddings</li>
-                    <li>GenAI for Temporal KGs</li>
-                    <li>Dialogue systems enhanced by KG and GenAI</li>
-                    <li>Cross-domain knowledge transfer with GenAI</li>
-                    <li>Bias mitigation using KGs in GenAI</li>
-                    <li>Explainability with KGs and GenAI</li>
-                    <li>Natural language querying of KGs via GenAI</li>
-                    <li>NLP tasks using KGs and GenAI</li>
-                    <li>Prompt Engineering using KGs</li>
-                    <li>GenAI for Ontology learning and schema induction in KGs</li>
-                    <li>Hybrid QA systems combining KGs and GenAI</li>
-                    <li>Recommendation systems and KGs with GenAI</li>
-                    <li>Creating benchmark datasets relevant for tasks combining KGs and GenAI</li>
-                    <li>Real-world applications on scholarly data, biomedical domain, etc.</li>
-                    <li>Knowledge Graph Alignment</li>
-                    <li>Applying to real-world scenarios</li>
+                    <li>KG grounding for information retrieval, including generation, querying, and dialogue</li>
+                        <ul>
+                            <li>KG-grounded generation / GraphRAG (subgraph retrieval, path-based evidence)</li>
+                            <li>Natural language querying of KGs via GenAI (e.g., NL-to-SPARQL)</li> 
+                            <li>Hybrid QA and dialogue systems combining KGs and GenAI (e.g., Agents)</li> 
+                            <li>Prompting / controllable generation using KG structure and constraints</li>
+                            <li>Context and memory indexing and retrieval for GenAI and agents</li>
+                        </ul>
+                    <li>Neuro-symbolic methods, reasoning, and explainability</li>
+                        <ul>
+                            <li>Hybrid reasoning with rules, constraints, and structured evidence</li> 
+                            <li>Explainability and verifiable reasoning with provenance/evidence graphs</li> 
+                            <li>Cross-domain knowledge transfer with KGs and GenAIK</li>
+
+                        </ul>
+                    <li>Representations, embeddings, and temporal/evolving KGs</li>
+                        <ul>
+                            <li>GenAI for KG embeddings and hybrid vectorgraph representations</li> 
+                            <li>Temporal KGs, dynamic updates, continual learning, concept drift</li> 
+                            <li>Ontology learning, schema induction, alignment, and schema evolution</li>
+                        </ul>
+                    <li>Trustworthiness, safety, and governance</li>
+                        <ul>
+                            <li>Bias mitigation using KGs in GenAI and Agentic Systems</li>
+                            <li>Hallucination reduction via grounding/constraints; robustness to attacks</li>
+                            <li>Uncertainty estimation and calibrated confidence</li>
+                            <li>Privacy, access control, and policy-aware KG-grounded generation</li>
+                        </ul>
+                    <li>Agentic KGs and real-world systems</li>
+                        <ul>
+                            <li>Agentic KGs: KGs as long-term memory/state for LLM agents</li>
+                            <li>KGs serving agents' memories: Episodic (experiences, events, etc.), Semantic (facts, concepts, etc.), and Procedural (skills, tasks, etc.)</li>
+                            <li>KG-aware planning, tool use (query/update), and multi-agent coordination</li>
+                            <li>Collaborative & shared agent memories and contexts.</li>
+                            <li>Context Engineering enhanced by KGs</li>
+                        </ul>
+                    <li>GenAI/Agents and KG Applications</li>
+                        <ul>
+                            <li>Efficient and proactive personal assistance & Personalisation</li>
+                            <li>Multi-Lingual & Multi-modal integrations and enablement</li>
+                            <li>Personalisation vs Generalisation in GenAI and Agentic systems memory</li>
+                            <li>Domain-specific applications: scholarly knowledge, biomedicine & healthcare, finance, education, etc.</li>
+                            <li>Task-specific applications: personal assistance, dialogue systems, recommender systems, customer service, etc.</li>
+                            <li>Architectures and pipelines
+                        </ul>
+                    <li>Datasets, benchmarks, and evaluation</li>
+                        <ul>
+                            <li>Benchmark datasets for GenAI or Agents plus KG tasks</li>
+                            <li>Evaluation of grounding/faithfulness, factuality, reasoning, robustness</li>
+                            <li>Evaluation pitfalls: data leakage, LLM-as-a-judge bias, reproducibility, and reporting standards</li>
+                        </ul>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
 
                 </ul>
                 <br /><br />
