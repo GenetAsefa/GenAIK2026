@@ -11326,3 +11326,21 @@ section#contact form#contactForm :-ms-input-placeholder {
   font-size: 0.9rem;
   font-family: "Montserrat", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
 }
+/* Two-column reviewers list */
+.reviewers-list {
+    columns: 2;
+    column-gap: 40px;
+}
+
+.reviewers-list li {
+    break-inside: avoid;
+    margin-bottom: 6px;
+}
+
+/* One column on phones */
+@media (max-width: 768px) {
+    .reviewers-list {
+        columns: 1;
+    }
+}
+
